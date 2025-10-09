@@ -16,7 +16,9 @@ config.bots.defaultPassword = 'bot';
 
 // Sets/scans config
 config.sets.scansDir = __dirname + '/scans';
-config.sets.scansDownloadUrl = 'https://ptcg.ryuu.eu/scans'; // Server to download missing scans
+//config.sets.scansDownloadUrl = 'https://ptcg.ryuu.eu/scans'; // Server to download missing scans
+// setting a local host to serve image scans for now
+config.sets.scansDownloadUrl = 'http://localhost:8080'; 
 
 // Define available sets
 const { baseSets, exSets, standardSets } = require('@ptcg/sets');
@@ -31,7 +33,9 @@ cardManager.defineFormat('Standard', [
   standardSets.setBlackAndWhite2,
   standardSets.setBlackAndWhite3,
   standardSets.setBlackAndWhite4,
-  standardSets.setSwordAndShield
+  standardSets.setSwordAndShield,
+  standardSets.setBrs,
+  standardSets.setSFA
 ]);
 
 cardManager.defineFormat('EX Sets', [
@@ -47,4 +51,8 @@ cardManager.defineFormat('Base Sets', [
 
 // Define bots
 const botManager = BotManager.getInstance();
-botManager.registerBot(new SimpleBot('bot'));
+botManager.registerBot(new SimpleBot('Cynthia'));
+botManager.registerBot(new SimpleBot('Hilda'));
+botManager.registerBot(new SimpleBot('Lillie'));
+botManager.registerBot(new SimpleBot('Acerola'));
+botManager.registerBot(new SimpleBot('Serena'));
