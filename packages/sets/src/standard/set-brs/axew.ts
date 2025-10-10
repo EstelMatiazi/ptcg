@@ -97,7 +97,7 @@ function* useUltraEvolution(
 
 export class Axew extends PokemonCard {
   public stage: Stage = Stage.BASIC;
-  public cardType: CardType[] = [CardType.DRAGON];
+  public cardTypes: CardType[] = [CardType.DRAGON];
   public hp = 60;
   public retreat = [CardType.COLORLESS];
   public set = 'BRS';

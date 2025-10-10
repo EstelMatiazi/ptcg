@@ -5,7 +5,8 @@ export enum CardTag {
   POKEMON_GX = 'GX',
   POKEMON_LV_X = 'LV_X',
   ACE_SPEC = 'ACE_SPEC',
-  FOSSIL = 'FOSSIL'
+  FOSSIL = 'FOSSIL',
+  TAG_TEAM = 'TAG_TEAM'
 }
 
 export enum SuperType {

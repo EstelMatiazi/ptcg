@@ -17,7 +17,7 @@ import {
 
 export class Fraxure extends PokemonCard {
   public stage: Stage = Stage.STAGE_1;
-  public cardType: CardType[] = [CardType.DRAGON];
+  public cardTypes: CardType[] = [CardType.DRAGON];
   public hp = 100;
   public retreat = [CardType.COLORLESS, CardType.COLORLESS];
   public set = 'SFA';

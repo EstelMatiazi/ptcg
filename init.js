@@ -16,9 +16,7 @@ config.bots.defaultPassword = 'bot';
 
 // Sets/scans config
 config.sets.scansDir = __dirname + '/scans';
-//config.sets.scansDownloadUrl = 'https://ptcg.ryuu.eu/scans'; // Server to download missing scans
-// setting a local host to serve image scans for now
-config.sets.scansDownloadUrl = 'http://localhost:8080'; 
+config.sets.scansDownloadUrl = 'https://ptcg.ryuu.eu/scans'; // Server to download missing scans
 
 // Define available sets
 const { baseSets, exSets, standardSets } = require('@ptcg/sets');
@@ -35,7 +33,16 @@ cardManager.defineFormat('Standard', [
   standardSets.setBlackAndWhite4,
   standardSets.setSwordAndShield,
   standardSets.setBrs,
-  standardSets.setSFA
+  standardSets.setSFA,
+  standardSets.setTWM,
+  standardSets.setEVS,
+  standardSets.setSv7,
+  standardSets.setASR,
+  standardSets.setOBF,
+  standardSets.setSCR,
+  standardSets.setCEC,
+  standardSets.setCIN,
+  standardSets.setBUS,
 ]);
 
 cardManager.defineFormat('EX Sets', [
