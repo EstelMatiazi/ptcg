@@ -17,3 +17,5 @@ export * from './set-SCR';
 export * from './set-cin';
 export * from './set-bus';
 export * from './set-CEC';
+export * from './set-WHT';
+export * from './set-CRE';

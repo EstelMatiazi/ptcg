@@ -43,6 +43,8 @@ cardManager.defineFormat('Standard', [
   standardSets.setCEC,
   standardSets.setCIN,
   standardSets.setBUS,
+  standardSets.setWHT,
+  standardSets.setCRE
 ]);
 
 cardManager.defineFormat('EX Sets', [
