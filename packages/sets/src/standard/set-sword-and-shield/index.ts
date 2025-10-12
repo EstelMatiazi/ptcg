@@ -10,6 +10,7 @@ import { Oranguru } from './oranguru';
 import { Rosa } from './rosa';
 import { Snorlax } from './snorlax';
 import { Welder } from './welder';
+import { Marnie } from './marnie';
 
 export const setSwordAndShield: Card[] = [
   new Charizard(),
@@ -23,4 +24,5 @@ export const setSwordAndShield: Card[] = [
   new Rosa(),
   new Snorlax(),
   new Welder(),
+  new Marnie()
 ];
