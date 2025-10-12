@@ -21,3 +21,4 @@ export * from './set-WHT';
 export * from './set-CRE';
 export * from './set-SIT';
 export * from './set-UPR';
+export * from './set-MEG';
